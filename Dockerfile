@@ -16,7 +16,7 @@ RUN apt-get update && apt-get install -y \
 WORKDIR /app
 
 # Clone the repository 
-RUN git clone --depth 1 --branch v0.2beta https://github.com/OCEAN-xyz/datum_gateway.git .
+RUN git clone --depth 1 --branch v0.2.1beta https://github.com/OCEAN-xyz/datum_gateway.git .
 
 # Build the project
 RUN cmake . && make
